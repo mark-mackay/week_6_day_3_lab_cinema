@@ -33,10 +33,10 @@ Cinema.prototype.checkFilmsByYear = function(year) {
 }
 
 Cinema.prototype.checkFilmsOverLength =  function(length) {
-  let result = this.films.filter((film) => {
+  let result = this.films.every((film) => {
     return film.length >= length;
   });
-  return result.length === this.films.length;
+  return result;
 }
 Cinema.prototype.checkTotalFilmsRunningTime = function(length) {
   let lengths = this.films.map((film) => {return film.length});
