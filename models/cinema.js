@@ -46,4 +46,5 @@ Cinema.prototype.checkTotalFilmsRunningTime = function(length) {
   });
   return result;
 }
+
 module.exports = Cinema;
